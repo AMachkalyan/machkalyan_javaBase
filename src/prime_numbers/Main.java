@@ -17,7 +17,7 @@ public class Main {
         scanner.close();
     }
 
-    public static ArrayList<Integer> primeList(int num1, int num2) {  // TODO добавить проверки
+    public static ArrayList<Integer> primeList(int num1, int num2) {
         ArrayList<Integer> primes = new ArrayList<>();
         if (num1 < num2) {
             for (int i = num1 + 1; i < num2 ; i++) {
