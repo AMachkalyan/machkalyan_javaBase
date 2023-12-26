@@ -9,16 +9,13 @@ public class twoNumbers {
         double num1 = scanner.nextDouble();
         System.out.print("Enter second number: ");
         double num2 = scanner.nextDouble();
-        System.out.println(isBigger(num1, num2));
+        isBigger(num1, num2);
     }
 
-    public static double isBigger(double num1, double num2) {
-        if (num1 > num2) {
-            return num1;
-        } else if (num1 < num2) {
-            return num2;
-        }
-        System.out.println("Values are equal!");
-        return 0;
+
+    public static void isBigger(double num1, double num2) {
+        if (num1 > num2)System.out.println(num1 + " is bigger");
+        else if (num1 < num2)System.out.println(num2 + " is bigger");
+        else System.out.println("Values are equal!");
     }
 }
