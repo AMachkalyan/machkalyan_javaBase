@@ -1,6 +1,8 @@
 package types;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,5 +15,7 @@ public class Main {
         char min = Character.MIN_VALUE;
         char max = Character.MAX_VALUE;
         System.out.println("Type char: min size: " + (int) min + " max size: " + (int) max);
+        int[] array = new int[]{1,3,4,5,6,7};
+        System.out.println(Arrays.toString(array));
     }
 }

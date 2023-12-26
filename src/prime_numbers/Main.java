@@ -19,15 +19,19 @@ public class Main {
 
     public static ArrayList<Integer> primeList(int num1, int num2) {  // TODO добавить проверки
         ArrayList<Integer> primes = new ArrayList<>();
-        for (int i = num1 + 1; i < num2 ; i++) {
-            boolean isPrime = true;
-            for (int j = 2; j < Math.sqrt(i); j++) {
-                if (i % j == 0) {
-                    isPrime = false;
-                    break;
+        if (num1 < num2) {
+            for (int i = num1 + 1; i < num2 ; i++) {
+                boolean isPrime = true;
+                for (int j = 2; j < Math.sqrt(i); j++) {
+                    if (i % j == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                    primes.add(i);
                 }
-                primes.add(i);
             }
+        } else {
+            System.out.println("Incorrect sequence of numbers");
         }
         return primes;
     }

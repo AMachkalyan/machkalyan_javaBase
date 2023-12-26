@@ -13,7 +13,6 @@ public class twoNumbers {
         scanner.close();
         scanner.close();
     }
-    
     public static void isBigger(double num1, double num2) {
         if (num1 > num2)
             System.out.println(num1 + " is bigger");
