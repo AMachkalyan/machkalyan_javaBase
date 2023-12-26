@@ -13,6 +13,8 @@ public class Main {
         int num2 = scanner.nextInt();
         ArrayList<Integer> primeNum = primeList(num1, num2);
         System.out.printf(String.valueOf(primeNum));
+        scanner.close();
+        scanner.close();
     }
 
     public static ArrayList<Integer> primeList(int num1, int num2) {  // TODO добавить проверки

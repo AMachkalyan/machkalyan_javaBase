@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        final long pass = 789456;
+        System.out.println("Установите пароль доступа: ");
+        final long pass = scanner.nextLong();
         boolean passIsAvailable = false;
         do {
             System.out.println("Введите пароль для доступа");
@@ -18,5 +19,6 @@ public class Main {
                 System.out.println("Пароль неверный, повторите попытку!");
             }
         } while (!passIsAvailable);
+        scanner.close();
     }
 }
