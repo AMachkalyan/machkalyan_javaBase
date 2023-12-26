@@ -12,7 +12,6 @@ public class twoNumbers {
         isBigger(num1, num2);
         scanner.close();
         scanner.close();
-
     }
 
 

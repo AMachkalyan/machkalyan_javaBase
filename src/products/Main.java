@@ -11,6 +11,5 @@ public class Main {
         store.addProduct(Product.JUICE);
         store.addProduct(Product.TOMATOES);
         System.out.println(store.showProducts());
-
     }
 }
